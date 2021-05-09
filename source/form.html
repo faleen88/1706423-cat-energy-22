@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body class="page__body">
+
+    <header class="page-header">
+      <nav class="main-nav">
+        <div class="main-nav__item">
+          <a class="main-nav__logo-link" href="index.html">
+            <picture>
+              <img src="img/logo-mobile.png" alt="Логотип магазина">
+            </picture>
+            <img src="img/logo.svg" alt="Логотип магазина">
+          </a>
+          <button class="main-nav__toggle">Открыть меню</button>
+        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__item-link" href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__item-link" href="catalog.html">Каталог продукции</a></li>
+          <li class="main-nav__item"><a class="main-nav__item-link main-nav__item-link--active">Подбор программы</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-form">
+
+      <h1 class="page-form__title">Подбор программы</h1>
+
+      <form class="form-selection" method="GET" action="https://echo.htmlacademy.ru">
+        <p class="form-selection__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+
+        <div class="form-selection__list">
+          <fieldset class="form-selection__item fields">
+            <ul class="fields__list">
+              <li class="fields__item field-text">
+                <label class="field-text__label" for="cat-name">Имя:*</label>
+                <input class="field-text__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
+              </li>
+              <li class="fields__item field-text">
+                <label class="field-text__label" for="cat-weight">Вес:*</label>
+                <input class="field-text__input" type="number" name="cat-weight" id="cat-weight" placeholder="7" required>
+              </li>
+              <li class="fields__item">
+                <label class="field-text__label" for="cat-age">Возраст (лет):</label>
+                <input class="field-text__input" type="number" name="cat-age" id="cat-age" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="form-selection__item fields">
+            <ul class="fields__list">
+              <li class="fields__item field-radio">
+                <input class="field-radio__input" type="radio" name="program" value="slimming" id="slimming" checked>
+                <label class="field-radio__label" for="slimming">Похудение</label>
+              </li>
+              <li class="fields__item">
+                <input class="field-radio__input" type="radio" name="program" value="weight-gain" id="weight-gain">
+                <label class="field-radio__label" for="weight-gain">Набор массы</label>
+              </li>
+              <li class="fields__item">
+                <input class="field-radio__input" type="radio" name="program" value="help" id="help">
+                <label class="field-radio__label" for="help">Не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+
+        <fieldset class="form-selection__item fields">
+          <h2 class="fields__title">Контактные данные (владельца кота)</h2>
+          <ul class="fields__list">
+            <li class="fields__item field-text">
+              <label class="field-text__label" for="post">E-mail:*</label>
+              <input class="field-text__input" type="email" name="post" id="post" placeholder="kuklachev@gmail.com" required>
+              <svg class="field-text__icon field-text__icon--email" width="20" height="14">
+                <use xlink:href="img/sprite.svg#email"></use>
+              </svg>
+            </li>
+            <li class="fields__item field-text">
+              <label class="field-text__label" for="phone">Телефон:*</label>
+              <input class="field-text__input" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
+              <svg class="field-text__icon field-text__icon--phone" width="20" height="20">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form-selection__item fields">
+          <h2 class="fields__title">Комментарий</h2>
+          <div class="fields__item field-text">
+            <label class="visually-hidden" for="comment">Напишите ваш комментарий</label>
+            <textarea class="field-text__comment" id="comment" name="comment" rows="6" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-selection__item fields">
+          <h2 class="fields__title">Дополнительно</h2>
+          <ul class="fields__list">
+            <li class="fields__item field-checkbox">
+              <input class="field-checkbox__input" type="checkbox" name="sweetener" id="sweetener" checked>
+              <label class="filter-checkbox__label" for="sweetener">Сахарозаменитель</label>
+            </li>
+            <li class="fields__item field-checkbox">
+              <input class="field-checkbox__input" type="checkbox" name="water" id="water">
+              <label class="filter-checkbox__label" for="water">Питьевая вода</label>
+            </li>
+            <li class="fields__item field-checkbox">
+              <input class="field-checkbox__input" type="checkbox" name="milk" id="milk">
+              <label class="filter-checkbox__label" for="milk">Молоко</label>
+            </li>
+            <li class="fields__item field-checkbox">
+              <input class="field-checkbox__input" type="checkbox" name="vitamins" id="vitamins">
+              <label class="filter-checkbox__label" for="vitamins">Витамины</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <div class="form-selection__dispatch">
+          <button class="form-selection__button button" type="submit"><span class="button__text">Отправить заявку</span></button>
+          <p class="form-selection__footnote">* — Обязательные поля</p>
+        </div>
+      </form>
+
+      <section class="information">
+        <div class="information__contacts">
+          <p class="information__cooperation">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="information__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <div class="information__location-map">
+          <div class="map" id="map"></div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__logo logo">
+        <a class="logo__link" href="#" aria-label="Логотип магазина">
+          <img src="img/logo.svg" alt="Логотип магазина">
+        </a>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="#" aria-label="Вконтакте">
+              <svg width="22" height="12">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#" aria-label="Инстаграм">
+              <svg width="16" height="16">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#" aria-label="Фейсбук">
+              <svg width="22" height="22">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">HTML Academy</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип HTML Academy">
+          <svg width="27" height="34">
+            <use xlink:href="img/sprite.svg#html-academy"></use>
+          </svg>
+        </a>
+      </div>
+    </footer>
+
+  </body>
+</html>
