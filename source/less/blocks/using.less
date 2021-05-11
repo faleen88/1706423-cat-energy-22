@@ -1,0 +1,83 @@
+.using {
+  margin-bottom: 42px;
+}
+
+.using__title {
+  margin: 0;
+  margin-bottom: 38px;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  font-family: @oswald;
+}
+
+.using__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.using__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.using__item {
+  min-height: 60px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: @green;
+    top: 0;
+    left: 0;
+  }
+
+  &--leaf::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 32px;
+    background-image: url("../../img/icon_leaf.svg");
+    top: 14px;
+    left: 15px;
+  }
+
+  &--tub::after {
+    content: "";
+    position: absolute;
+    width: 29px;
+    height: 31px;
+    background-image: url("../../img/icon_tub.svg");
+    top: 13px;
+    left: 15px;
+  }
+
+  &--eat::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 30px;
+    background-image: url("../../img/icon_eat.svg");
+    top: 15px;
+    left: 18px;
+  }
+
+  &--alarm::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 33px;
+    background-image: url("../../img/icon_alarm.svg");
+    top: 13px;
+    left: 14px;
+  }
+}
+
+.using__text {
+  margin: 0;
+  padding: 3px 0 4px 80px;
+}
+
