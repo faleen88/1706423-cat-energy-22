@@ -1,0 +1,40 @@
+.products-more {
+  padding-top: 78px;
+  text-align: center;
+}
+
+.products-more__title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: @oswald;
+  text-transform: uppercase;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/cross.svg");
+    top: -53px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.products-more__text {
+  margin: 0;
+  margin-bottom: 21px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.products-more__button {
+  background-color: @bg-grey;
+  color: @darkgrey;
+  font-size: 16px;
+  line-height: 20px;
+}
