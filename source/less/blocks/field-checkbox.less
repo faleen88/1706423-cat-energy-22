@@ -1,0 +1,51 @@
+.field-checkbox {
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  &:last-child {
+    margin-bottom: 19px;
+  }
+
+  &:hover {
+    .field-checkbox__label::before {
+      border: 1px solid @hover-grey;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.field-checkbox__label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding-left: 43px;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: @oswald;
+  text-transform: uppercase;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border: 1px solid @border-grey;
+    top: 0;
+    left: -2px;
+  }
+}
+
+.field-checkbox__input:checked + .field-checkbox__label::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/check.svg");
+  top: 9px;
+  left: 5px;
+}

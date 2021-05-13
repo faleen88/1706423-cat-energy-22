@@ -1,0 +1,71 @@
+.field-text {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: baseline;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+
+  &:last-child {
+    margin-bottom: 23px;
+  }
+
+  &--contacts {
+    .field-text__label {
+      padding-right: 10px;
+    }
+
+    .field-text__input {
+      border: 1px solid @border-grey;
+    }
+  }
+}
+
+.field-text__label {
+  margin-left: -2px;
+  padding-right: 15px;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: @oswald;
+  text-transform: uppercase;
+}
+
+.field-text__input {
+  min-height: 43px;
+  width: 100%;
+  padding: 0;
+  border: 1px solid @input-grey;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: @oswald;
+  text-transform: uppercase;
+
+  &::placeholder {
+    padding-left: 14px;
+  }
+}
+
+.field-text__icon {
+  position: absolute;
+}
+
+.field-text__comment {
+  width: 92%;
+  min-height: 130px;
+  margin-left: -2px;
+  padding: 9px 14px;
+  border: 1px solid @input-grey;
+  resize: none;
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  &::placeholder {
+    color: @darkgrey;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: @oswald;
+    text-transform: uppercase;
+  }
+}
