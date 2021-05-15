@@ -6,6 +6,11 @@
   display: flex;
   padding-top: 28px;
   padding-bottom: 26px;
+
+  @media (min-width: @tablet-width) {
+    padding: 63px 41px 57px;
+    justify-content: space-between;
+  }
 }
 
 .information__cooperation {
@@ -16,12 +21,29 @@
   font-weight: 400;
   font-family: @oswald;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    width: 30%;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 .information__address {
   width: 50%;
   margin: 0;
   line-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 30%;
+    font-size: 16px;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .information__location-map {
@@ -29,4 +51,8 @@
   height: 362px;
   background-image: url("../img/location.png");
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    height: 400px;
+  }
 }

@@ -13,9 +13,10 @@
         <div class="main-nav__logo">
           <a class="main-nav__logo-link">
             <picture>
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.png">
               <img src="img/logo-mobile.png" alt="Логотип магазина">
             </picture>
-            <img src="img/logo.svg" width="101" height="18" alt="Логотип магазина">
+            <img class="main-nav__logo-text" src="img/logo.svg" width="101" height="18" alt="Логотип магазина">
           </a>
           <button class="main-nav__toggle" aria-label="Открыть меню"></button>
         </div>
@@ -30,15 +31,13 @@
     <main class="page-main">
 
       <section class="header">
-        <div class="header">
-          <div class="container">
-            <h1 class="header__title"><span class="visually-hidden">Интернет-магазин - Cat energy. </span>Функциональное<br>питание для котов</h1>
-            <p class="header__text">Занялся собой? Займись котом!</p>
-            <picture>
-              <img class="header__photo" src="img/index-can-mobile.png" alt="Cat Energy PRO со вкусом курицы">
-            </picture>
-            <a class="header__button button" href="form.html"><span class="button__text">Подобрать программу</span></a>
-          </div>
+        <div class="container">
+          <h1 class="header__title"><span class="visually-hidden">Интернет-магазин - Cat energy. </span>Функциональное<br>питание для котов</h1>
+          <p class="header__text">Занялся собой? Займись котом!</p>
+          <picture>
+            <img class="header__photo" src="img/index-can-mobile.png" alt="Cat Energy PRO со вкусом курицы">
+          </picture>
+          <a class="header__button button" href="form.html"><span class="button__text">Подобрать программу</span></a>
         </div>
       </section>
 
@@ -93,8 +92,11 @@
               <b class="example__value">60 ДНЕЙ</b>
               <small class="example__parameter">затрачено времени</small>
             </div>
+            <div class="example__item-expenses">
+              <b class="example__parameter-expenses">Затраты на питание:</b>
+              <b class="example__value-expenses">15 000 РУБ.</b>
+            </div>
           </div>
-          <p class="example__expenses">Затраты на питание: 15 000 РУБ.</p>
         </div>
         <div class="example__slider">
 
@@ -105,7 +107,7 @@
         <div class="container">
           <div class="information__contacts">
             <p class="information__cooperation">Приглашаем<br>к сотрудничеству дилеров!</p>
-            <p class="information__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            <p class="information__address">ул. Большая Конюшенная, д. 19/8<span>Санкт-Петербург</span></p>
           </div>
         </div>
         <div class="information__location-map">
@@ -117,43 +119,45 @@
 
     <footer class="page-footer">
       <div class="container">
-        <div class="page-footer__logo logo">
-          <a class="logo__link" href="#" aria-label="Логотип магазина">
-            <img class="logo__img" src="img/logo.svg" width="128" height="24" alt="Логотип магазина">
-          </a>
-        </div>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vk" href="#" aria-label="Вконтакте">
-                <svg width="23" height="16">
-                  <use xlink:href="img/sprite.svg#vk"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="#" aria-label="Инстаграм">
-                <svg width="16" height="16">
-                  <use xlink:href="img/sprite.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#" aria-label="Фейсбук">
-                <svg width="22" height="22">
-                  <use xlink:href="img/sprite.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">HTML Academy</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип HTML Academy">
-            <svg width="27" height="34">
-              <use xlink:href="img/sprite.svg#html-academy"></use>
-            </svg>
-          </a>
+        <div class="page-footer__wrapper">
+          <div class="page-footer__logo logo">
+            <a class="logo__link" href="#" aria-label="Логотип магазина">
+              <img class="logo__img" src="img/logo.svg" width="128" height="24" alt="Логотип магазина">
+            </a>
+          </div>
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vk" href="#" aria-label="Вконтакте">
+                  <svg width="23" height="16">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="#" aria-label="Инстаграм">
+                  <svg width="16" height="16">
+                    <use xlink:href="img/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="#" aria-label="Фейсбук">
+                  <svg width="22" height="22">
+                    <use xlink:href="img/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <b class="copyright__text">HTML Academy</b>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип HTML Academy">
+              <svg width="27" height="34">
+                <use xlink:href="img/sprite.svg#html-academy"></use>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </footer>

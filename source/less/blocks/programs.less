@@ -1,5 +1,9 @@
 .programs {
   margin-bottom: 27px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 46px;
+  }
 }
 
 .programs__list {
@@ -10,42 +14,24 @@
 
 .programs__item:not(:last-child) {
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .programs__item {
   padding: 30px 20px 19px;
   background-color: @bg-grey;
-  position: relative;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: @green;
-    border-radius: 50%;
-    top: 24px;
-    left: 22px;
+  @media (min-width: @tablet-width) {
+    padding: 78px 279px 55px 52px;
   }
 
-  &--slim::after {
-    content: "";
-    position: absolute;
-    width: 36px;
-    height: 50px;
-    background-image: url("../../img/vector-1.svg");
-    top: 21px;
-    left: 29px;
-  }
-
-  &--pro::after {
-    content: "";
-    position: absolute;
-    width: 67px;
-    height: 28px;
-    background-image: url("../../img/vector-2.svg");
-    top: 35px;
-    left: 13px;
+  &--pro {
+    @media (min-width: @tablet-width) {
+      padding-right: 314px;
+    }
   }
 }
 
@@ -58,6 +44,13 @@
   line-height: 37px;
   font-weight: 400;
   font-family: @oswald;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .programs__text {
@@ -65,10 +58,15 @@
   padding-bottom: 23px;
   margin-bottom: 19px;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
+    border-bottom: none;
+  }
 }
 
 .programs__item-link {
-  padding-right: 48px;
+  padding-right: 56px;
   color: @black;
   text-transform: uppercase;
   font-size: 16px;
@@ -76,13 +74,33 @@
   font-family: @oswald;
   position: relative;
 
+  @media (min-width: @tablet-width) {
+    padding-right: 65px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   &::after {
     content: "";
     position: absolute;
-    width: 24px;
+    width: 32px;
     height: 12px;
     background-image: url("../../img/icon_arrow.svg");
     top: 6px;
     right: 8px;
+
+    @media (min-width: @tablet-width) {
+      top: 8px;
+    }
+  }
+
+  &:hover {
+    &::after {
+      background-image: url("../../img/icon_arrow-2.svg");
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
