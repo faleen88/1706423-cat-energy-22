@@ -50,17 +50,19 @@
     left: 22px;
 
     @media (min-width: @tablet-width) {
+      width: 200px;
+      height: 200px;
+      top: 92px;
+      left: auto;
+      right: 61px;
+    }
+
+    @media (min-width: @desktop-width) {
       width: 100px;
       height: 100px;
       top: 47px;
       left: 52px;
       right: auto;
-    }
-
-    @media (min-width: @desktop-width) {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
     }
   }
 

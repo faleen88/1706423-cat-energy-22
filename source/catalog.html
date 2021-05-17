@@ -10,22 +10,30 @@
 
     <header class="page-header">
       <nav class="main-nav">
-        <div class="main-nav__logo">
-          <a class="main-nav__logo-link" href="index.html">
-            <picture>
-              <source media="(min-width: 1440px)" srcset="img/logo-desktop.png">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.png">
-              <img src="img/logo-mobile.png" alt="Логотип магазина">
-            </picture>
-            <img class="main-nav__logo-text" src="img/logo.svg" width="101" height="18" alt="Логотип магазина">
-          </a>
-          <button class="main-nav__toggle" aria-label="Открыть меню"></button>
+        <div class="main-nav__wrapper main-nav__wrapper--inner">
+          <div class="main-nav__logo main-nav__logo--active">
+            <a class="main-nav__logo-link" href="index.html">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/logo-desktop.png">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.png">
+                <img src="img/logo-mobile.png" alt="Логотип магазина">
+              </picture>
+              <img class="main-nav__logo-text" src="img/logo.svg" width="101" height="18" alt="Логотип магазина">
+            </a>
+            <button class="main-nav__toggle" aria-label="Открыть меню"></button>
+          </div>
+          <ul class="main-nav__list site-nav">
+            <li class="site-nav__item">
+              <a class="site-nav__item-link" href="index.html">Главная</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__item-link site-nav__item-link--active">Каталог продукции</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__item-link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
         </div>
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a class="main-nav__item-link" href="index.html">Главная</a></li>
-          <li class="main-nav__item"><a class="main-nav__item-link main-nav__item-link--active">Каталог продукции</a></li>
-          <li class="main-nav__item"><a class="main-nav__item-link" href="form.html">Подбор программы</a></li>
-        </ul>
       </nav>
     </header>
 
@@ -238,45 +246,47 @@
       <section class="additional-products">
         <div class="container">
           <h2 class="additional-products__title title-style">Дополнительные товары</h2>
-          <ul class="additional-products__list">
-            <li class="additional-products__item additional-product">
-              <h3 class="additional-product__title">Сахарозаменитель</h3>
-              <dl class="additional-product__item">
-                <dt class="additional-product__unit">1 упаковка (100 г)</dt>
-                <dd class="additional-product__price">200 Р.</dd>
-              </dl>
-              <a class="additional-product__button button" href="#"><span class="button__text">Заказать</span></a>
-            </li>
-            <li class="additional-products__item additional-product">
-              <h3 class="additional-product__title">Питьевая вода</h3>
-              <dl class="additional-product__item">
-                <dt class="additional-product__unit">5 литров</dt>
-                <dd class="additional-product__price">50 Р.</dd>
-              </dl>
-              <a class="additional-product__button button" href="#"><span class="button__text">Заказать</span></a>
-            </li>
-            <li class="additional-products__item additional-product">
-              <h3 class="additional-product__title">Молоко</h3>
-              <dl class="additional-product__item">
-                <dt class="additional-product__unit">1 литр</dt>
-                <dd class="additional-product__price">100 Р.</dd>
-              </dl>
-              <a class="additional-product__button button" href="#"><span class="button__text">Заказать</span></a>
-            </li>
-            <li class="additional-products__item additional-product">
-              <h3 class="additional-product__title">Витамины</h3>
-              <dl class="additional-product__item">
-                <dt class="additional-product__unit">1 упаковка (30 г)</dt>
-                <dd class="additional-product__price">300 Р.</dd>
-              </dl>
-              <a class="additional-product__button button" href="#"><span class="button__text">Заказать</span></a>
-            </li>
-          </ul>
-          <div class="additional-products__gift">
-            <svg class="additional-products__gift-icon" width="78" height="80">
-              <use xlink:href="img/sprite.svg#gift"></use>
-            </svg>
-            <p class="additional-products__gift-text">Закажите все<br>и получите чехол для кота в подарок!</p>
+          <div class="additional-products__wrapper">
+            <ul class="additional-products__list">
+              <li class="additional-products__item additional-product">
+                <h3 class="additional-product__title">Сахарозаменитель</h3>
+                <dl class="additional-product__item">
+                  <dt class="additional-product__unit">1 упаковка (100 г)</dt>
+                  <dd class="additional-product__price">200 Р.</dd>
+                </dl>
+                <a class="additional-product__button button" href="#"><span class="button__text">Заказать</span></a>
+              </li>
+              <li class="additional-products__item additional-product">
+                <h3 class="additional-product__title">Питьевая вода</h3>
+                <dl class="additional-product__item">
+                  <dt class="additional-product__unit">5 литров</dt>
+                  <dd class="additional-product__price">50 Р.</dd>
+                </dl>
+                <a class="additional-product__button button" href="#"><span class="button__text">Заказать</span></a>
+              </li>
+              <li class="additional-products__item additional-product">
+                <h3 class="additional-product__title">Молоко</h3>
+                <dl class="additional-product__item">
+                  <dt class="additional-product__unit">1 литр</dt>
+                  <dd class="additional-product__price">100 Р.</dd>
+                </dl>
+                <a class="additional-product__button button" href="#"><span class="button__text">Заказать</span></a>
+              </li>
+              <li class="additional-products__item additional-product">
+                <h3 class="additional-product__title">Витамины</h3>
+                <dl class="additional-product__item">
+                  <dt class="additional-product__unit">1 упаковка (30 г)</dt>
+                  <dd class="additional-product__price">300 Р.</dd>
+                </dl>
+                <a class="additional-product__button button" href="#"><span class="button__text">Заказать</span></a>
+              </li>
+            </ul>
+            <div class="additional-products__gift">
+              <svg class="additional-products__gift-icon" width="78" height="80">
+                <use xlink:href="img/sprite.svg#gift"></use>
+              </svg>
+              <p class="additional-products__gift-text">Закажите все<br>и получите чехол для кота в подарок!</p>
+            </div>
           </div>
         </div>
       </section>

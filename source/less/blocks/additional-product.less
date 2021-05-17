@@ -20,6 +20,12 @@
     line-height: 20px;
     margin-bottom: 27px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 325px;
+    margin-bottom: 0;
+    padding-top: 9px;
+  }
 }
 
 .additional-product__item {
@@ -27,6 +33,17 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 13px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+    padding-top: 11px;
+  }
+}
+
+.additional-product__unit {
+  @media (min-width: @desktop-width) {
+    width: 245px;
+  }
 }
 
 .additional-product__price {
@@ -34,6 +51,12 @@
     min-width: 44px;
     margin-left: 49px;
     text-align: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 80px;
+    margin-left: 0;
+    text-align: start;
   }
 }
 
@@ -44,5 +67,9 @@
   @media (min-width: @tablet-width) {
     width: 100%;
     min-height: 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 244px;
   }
 }
