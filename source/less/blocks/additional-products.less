@@ -1,12 +1,22 @@
 .additional-products {
   margin-top: 25px;
   margin-bottom: 36px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 78px;
+  }
 }
 
 .additional-products__title {
   margin: 0;
   margin-bottom: 34px;
   padding-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 36px;
+    padding-right: 37px;
+    margin-bottom: 80px;
+  }
 }
 
 .additional-products__list {
@@ -14,6 +24,10 @@
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 69px;
+  }
 }
 
 .additional-products__item {
@@ -21,7 +35,56 @@
   padding-top: 13px;
   padding-bottom: 16px;
 
+  @media (min-width: @tablet-width) {
+    padding: 25px 38px 28px;
+    border-left: 1px solid @border-grey;
+    border-right: 1px solid @border-grey;
+  }
+
   &:first-child {
     border-top: 1px solid @border-grey;
+  }
+}
+
+.additional-products__gift {
+  padding: 58px 61px 43px 58px;
+  background-image: url("../img/gift-photo-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 289px;
+
+  @media (min-width: @tablet-width) {
+    padding: 57px 124px 60px 78px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url("../img/gift-photo-tablet.jpg");
+    background-size: 100% 200px;
+  }
+}
+
+.additional-products__gift-icon {
+  margin-bottom: 48px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    margin-left: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+}
+
+.additional-products__gift-text {
+  margin: 0;
+  color: @white;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 161px;
+    padding-top: 15px;
+    text-align: start;
   }
 }
