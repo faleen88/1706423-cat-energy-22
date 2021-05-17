@@ -13,6 +13,7 @@
         <div class="main-nav__logo">
           <a class="main-nav__logo-link">
             <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop.png">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.png">
               <img src="img/logo-mobile.png" alt="Логотип магазина">
             </picture>
@@ -32,12 +33,16 @@
 
       <section class="header">
         <div class="container">
-          <h1 class="header__title"><span class="visually-hidden">Интернет-магазин - Cat energy. </span>Функциональное<br>питание для котов</h1>
-          <p class="header__text">Занялся собой? Займись котом!</p>
-          <picture>
-            <img class="header__photo" src="img/index-can-mobile.png" alt="Cat Energy PRO со вкусом курицы">
-          </picture>
-          <a class="header__button button" href="form.html"><span class="button__text">Подобрать программу</span></a>
+          <div class="header__wrapper">
+            <h1 class="header__title"><span class="visually-hidden">Интернет-магазин - Cat energy. </span>Функциональное<br>питание для котов</h1>
+            <p class="header__text">Занялся собой? Займись котом!</p>
+            <picture class="header__photo-container">
+              <source media="(min-width: 1440px)" srcset="img/index-can-desktop.png">
+              <source media="(min-width: 768px)" srcset="img/index-can-tablet.png">
+              <img class="header__photo" src="img/index-can-mobile.png" alt="Cat Energy PRO со вкусом курицы">
+            </picture>
+            <a class="header__button button" href="form.html"><span class="button__text">Подобрать программу</span></a>
+          </div>
         </div>
       </section>
 
@@ -104,13 +109,15 @@
       </section>
 
       <section class="information">
-        <div class="container">
-          <div class="information__contacts">
-            <p class="information__cooperation">Приглашаем<br>к сотрудничеству дилеров!</p>
-            <p class="information__address">ул. Большая Конюшенная, д. 19/8<span>Санкт-Петербург</span></p>
+        <div class="information__contacts">
+          <div class="information__contacts-wrapper">
+            <div class="contacts">
+              <p class="contacts__cooperation">Приглашаем<br>к сотрудничеству дилеров!</p>
+              <p class="contacts__address">ул. Большая Конюшенная, д. 19/8<span>Санкт-Петербург</span></p>
+            </div>
           </div>
         </div>
-        <div class="information__location-map">
+        <div class="information__map">
           <div class="map" id="map"></div>
         </div>
       </section>
@@ -128,22 +135,22 @@
           <div class="page-footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link social__link--vk" href="#" aria-label="Вконтакте">
-                  <svg width="23" height="16">
+                <a class="social__link" href="#" aria-label="Вконтакте">
+                  <svg class="social__icon social__icon--vk" width="23" height="16">
                     <use xlink:href="img/sprite.svg#vk"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--instagram" href="#" aria-label="Инстаграм">
-                  <svg width="16" height="16">
+                <a class="social__link" href="#" aria-label="Инстаграм">
+                  <svg class="social__icon social__icon--instagram" width="16" height="16">
                     <use xlink:href="img/sprite.svg#instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--facebook" href="#" aria-label="Фейсбук">
-                  <svg width="22" height="22">
+                <a class="social__link" href="#" aria-label="Фейсбук">
+                  <svg class="social__icon social__icon--facebook" width="22" height="22">
                     <use xlink:href="img/sprite.svg#facebook"></use>
                   </svg>
                 </a>
