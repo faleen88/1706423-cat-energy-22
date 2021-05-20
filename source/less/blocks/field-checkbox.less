@@ -3,10 +3,6 @@
     margin-bottom: 12px;
   }
 
-  &:last-child {
-    margin-bottom: 19px;
-  }
-
   &:hover {
     .field-checkbox__label::before {
       border: 1px solid @hover-grey;
@@ -30,6 +26,12 @@
   text-transform: uppercase;
   position: relative;
 
+  @media (min-width: @tablet-width) {
+    padding-left: 57px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -38,6 +40,13 @@
     border: 1px solid @border-grey;
     top: 0;
     left: -2px;
+
+    @media (min-width: @tablet-width) {
+      width: 38px;
+      height: 38px;
+      top: -5px;
+      left: -2px;
+    }
   }
 }
 
@@ -49,4 +58,8 @@
   background-image: url("../img/check.svg");
   top: 9px;
   left: 5px;
+
+  @media (min-width: @tablet-width) {
+    left: 9px;
+  }
 }

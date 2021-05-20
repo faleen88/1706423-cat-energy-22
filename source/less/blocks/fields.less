@@ -6,9 +6,139 @@
 
 .fields__title {
   margin: 0;
-  margin-bottom: 35px;
+  margin-left: -2px;
 
-  &--comment {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 77px;
+  }
+}
+
+.fields--data-cat {
+  margin-bottom: 23px;
+  margin-left: -1px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+  }
+}
+
+.fields--programs {
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: 27px;
+  border-top: 1px solid @footer-grey;
+  border-bottom: 1px solid @footer-grey;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 0;
+    margin-right: 0;
+    border-left: 1px solid @footer-grey;
+    border-right: 1px solid @footer-grey;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+  }
+
+  .fields__list {
+    margin-top: 22px;
+    margin-bottom: 18px;
+    padding: 0 22px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding: 0 20px;
+    }
+  }
+}
+
+.fields--data-man {
+  margin-bottom: 24px;
+
+  .fields__title {
+    margin-bottom: 35px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 77px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 76px;
+    }
+  }
+
+  .fields__list {
+    margin-left: -1px;
+
+    @media (min-width: @desktop-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 80px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 47px;
+  }
+}
+
+.fields--comment {
+  margin-bottom: 24px;
+
+  .fields__title {
     margin-bottom: 38px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 76px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 67px;
+  }
+}
+
+.fields--additionall {
+  margin-bottom: 34px;
+
+  .fields__title {
+    margin-bottom: 34px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 62px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 54px;
+  }
+
+  .fields__list {
+    @media (min-width: @tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 60px;
+      grid-row-gap: 30px;
+    }
+
+    @media (min-width: @desktop-width) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-column-gap: 83px;
+    }
   }
 }
