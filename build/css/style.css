@@ -101,6 +101,16 @@ img {
   font-weight: 500;
   font-family: "Oswald", "Arial", sans-serif;
 }
+.site-nav__item-link:hover {
+  opacity: 0.6;
+}
+.site-nav__item-link:active {
+  opacity: 0.3;
+}
+.site-nav__item-link--active:hover,
+.site-nav__item-link--active:active {
+  opacity: 1;
+}
 @media (min-width: 768px) {
   .site-nav__item-link {
     font-size: 18px;
@@ -149,13 +159,14 @@ img {
   padding: 12px 20px 15px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid #e6e6e6;
 }
 .main-nav__logo:hover {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .main-nav__logo:active {
-  opacity: 0.3;
+  opacity: 0.6;
 }
 .main-nav__logo--active:hover,
 .main-nav__logo--active:active {
@@ -183,16 +194,31 @@ img {
     min-width: 202px;
   }
 }
-@media (min-width: 768px) {
-  .main-nav__logo-text {
-    padding-top: 3px;
-  }
+.main-nav__logo-text {
+  padding-top: 3px;
 }
 @media (min-width: 1440px) {
   .main-nav__logo-text {
     width: 118px;
     padding-top: 6px;
   }
+}
+.main-nav__toggle {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: #ffffff;
+  position: relative;
+  cursor: pointer;
+}
+.main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 18px;
+  background-image: url("../img/open.svg");
+  top: 5px;
+  left: 0;
 }
 @media (min-width: 768px) {
   .main-nav__toggle {
@@ -212,6 +238,41 @@ img {
 @media (min-width: 1440px) {
   .main-nav__list {
     padding-top: 16px;
+  }
+}
+.main-nav__toggle:hover::before {
+  opacity: 0.8;
+}
+.main-nav__toggle:active::before {
+  opacity: 0.6;
+}
+.main-nav--opend .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/close.svg");
+  top: 2px;
+  left: 2px;
+}
+.main-nav--opend .main-nav__toggle:hover::before {
+  opacity: 0.8;
+}
+.main-nav--opend .main-nav__toggle:active::before {
+  opacity: 0.6;
+}
+@media (max-width: 767px) {
+  .main-nav__list {
+    display: none;
+  }
+  .main-nav--opend .main-nav__list {
+    display: block;
+  }
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+  .main-nav--nojs .main-nav__list {
+    display: block;
   }
 }
 .header {

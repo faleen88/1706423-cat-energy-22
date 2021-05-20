@@ -21,14 +21,15 @@
   padding: 12px 20px 15px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid @nav-grey;
 
   &:hover {
-    opacity: 0.6;
+    opacity: 0.8;
   }
 
   &:active {
-    opacity: 0.3;
+    opacity: 0.6;
   }
 
   &--active {
@@ -60,9 +61,7 @@
 }
 
 .main-nav__logo-text {
-  @media (min-width: @tablet-width) {
-    padding-top: 3px;
-  }
+  padding-top: 3px;
 
   @media (min-width: @desktop-width) {
     width: 118px;
@@ -71,6 +70,23 @@
 }
 
 .main-nav__toggle {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: @white;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 18px;
+    background-image: url("../img/open.svg");
+    top: 5px;
+    left: 0;
+  }
+
   @media (min-width: @tablet-width) {
     display: none;
   }
@@ -87,6 +103,50 @@
 
   @media (min-width: @desktop-width) {
     padding-top: 16px;
+  }
+}
+
+.main-nav__toggle:hover::before {
+  opacity: 0.8;
+}
+
+.main-nav__toggle:active::before {
+  opacity: 0.6;
+}
+
+.main-nav--opend .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/close.svg");
+  top: 2px;
+  left: 2px;
+}
+
+.main-nav--opend .main-nav__toggle:hover::before {
+  opacity: 0.8;
+}
+
+.main-nav--opend .main-nav__toggle:active::before {
+  opacity: 0.6;
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav__list {
+    display: none;
+  }
+
+  .main-nav--opend .main-nav__list {
+    display: block;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    display: block;
   }
 }
 
