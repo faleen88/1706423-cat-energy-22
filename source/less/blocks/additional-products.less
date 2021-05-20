@@ -75,12 +75,20 @@
   background-repeat: no-repeat;
   background-size: 100% 289px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
+
   @media (min-width: @tablet-width) {
     padding: 57px 124px 60px 78px;
     display: flex;
     justify-content: space-between;
     background-image: url("../img/gift-photo-tablet.jpg");
     background-size: 100% 200px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -89,6 +97,10 @@
     background-image: url("../img/gift-photo-desktop.jpg");
     background-size: 100% 289px;
     padding: 57px 43px 42px 41px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
   }
 }
 
