@@ -1,20 +1,20 @@
 .example {
   padding-top: 27px;
-  padding-bottom: 25px;
+  padding-bottom: 35px;
   background-color: @grey;
 
   @media (min-width: @tablet-width) {
     padding-top: 43px;
-    padding-bottom: 33px;
-    background-color: @white;
+    padding-bottom: 69px;
+    background-color: transparent;
+    position: relative;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 0;
     padding-bottom: 10px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 80px;
+    grid-template-columns: 680px 1fr;
   }
 }
 
@@ -25,6 +25,7 @@
   line-height: 40px;
   font-weight: 400;
   font-family: @oswald;
+  color: @black;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
@@ -49,6 +50,7 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 69px;
+    padding-right: 25px;
   }
 }
 
@@ -96,6 +98,7 @@
   display: block;
   padding-top: 14px;
   padding-bottom: 16px;
+  color: @black;
 
   @media (min-width: @tablet-width) {
     width: 160px;
@@ -126,6 +129,10 @@
     line-height: 14px;
     background-color: @white;
   }
+
+  @media (min-width: @desktop-width) {
+    background-color: @bg-grey;
+  }
 }
 
 .example__item-expenses {
@@ -152,6 +159,7 @@
   font-weight: 400;
   font-family: @oswald;
   text-transform: uppercase;
+  color: @black;
 
   @media (min-width: @tablet-width) {
     padding-top: 10px;
@@ -166,9 +174,22 @@
 }
 
 .example__slider {
-  min-height: 298px;
+  @media (min-width: @desktop-width) {
+    padding-right: 70px;
+  }
+}
 
+.example__bg {
   @media (min-width: @tablet-width) {
-    min-height: 620px;
+    position: absolute;
+    width: 100%;
+    height: 462px;
+    background-color: @grey;
+    z-index: -1;
+    bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: linear-gradient(to right, @bg-grey 72.5%, @grey 72.5%);
   }
 }
