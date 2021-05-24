@@ -16,6 +16,12 @@
   &:active {
     opacity: 0.3;
   }
+
+  &:focus-within {
+    .field-radio__label::before {
+      border: 1px solid @green;
+    }
+  }
 }
 
 .field-radio__label {

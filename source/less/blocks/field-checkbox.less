@@ -12,6 +12,12 @@
   &:active {
     opacity: 0.3;
   }
+
+  &:focus-within {
+    .field-checkbox__label::before {
+      border: 2px solid @green;
+    }
+  }
 }
 
 .field-checkbox__label {

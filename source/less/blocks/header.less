@@ -6,15 +6,31 @@
   background-position: center top;
   background-size: 100% 302px;
   text-align: center;
+  position: relative;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg");
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 302px;
+    background-color: @green;
+    right: 0;
+    top: 0;
+    z-index: -1;
   }
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
     color: @black;
     background-image: none;
+
+    &::after {
+      background-color: transparent;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -26,6 +42,12 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/index-background-desktop@2x.jpg");
+    }
+
+    &::after {
+      height: 100%;
+      width: 50%;
+      background-color: @green;
     }
   }
 }
