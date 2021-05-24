@@ -102,74 +102,80 @@
 
       <section class="example">
         <div class="container">
-          <h2 class="example__title">Живой пример</h2>
-          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-          <div class="example__list">
-            <div class="example__item">
-              <b class="example__value">5 КГ</b>
-              <small class="example__parameter">снижение веса</small>
+          <div class="example__wrapper">
+            <div class="example__description">
+              <h2 class="example__title">Живой пример</h2>
+              <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+              <div class="example__list">
+                <div class="example__item">
+                  <b class="example__value">5 КГ</b>
+                  <small class="example__parameter">снижение веса</small>
+                </div>
+                <div class="example__item">
+                  <b class="example__value">60 ДНЕЙ</b>
+                  <small class="example__parameter">затрачено времени</small>
+                </div>
+                <div class="example__item-expenses">
+                  <b class="example__parameter-expenses">Затраты на питание:</b>
+                  <b class="example__value-expenses">15 000 РУБ.</b>
+                </div>
+              </div>
             </div>
-            <div class="example__item">
-              <b class="example__value">60 ДНЕЙ</b>
-              <small class="example__parameter">затрачено времени</small>
+            <div class="example__slider slider">
+              <ul class="slider__list">
+                <li class="slider__item slider__item--before">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet.webp 1x, img/before-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/before-mobile.webp 1x, img/before-mobile@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="img/before-tablet.png 1x, img/before-tablet@2x.png 2x">
+                    <img class="slider__photo slider__photo--before" src="img/before-mobile.png" srcset="img/before-mobile.png 1x, img/before-mobile@2x.png 2x" alt="Упитанный кот">
+                  </picture>
+                </li>
+                <li class="slider__item slider__item--middle">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/middle1-desktop.webp 1x, img/middle1-desktop@2x.webp 2x">
+                    <source type="image/webp" srcset="img/middle1-tablet.webp 1x, img/middle1-tablet@2x.webp 2x">
+                    <source media="(min-width: 1440px)" srcset="img/middle1-desktop.png 1x, img/middle1-desktop@2x.png 2x">
+                    <img class="slider__photo slider__photo--fat" src="img/middle1-tablet.png" srcset="img/middle1-tablet.png 1x, img/middle1-tablet@2x.png 2x" alt="Половина упитанного кота">
+                  </picture>
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/middle2-desktop.webp 1x, img/middle2-desktop@2x.webp 2x">
+                    <source type="image/webp" srcset="img/middle2-tablet.webp 1x, img/middle2-tablet@2x.webp 2x">
+                    <source media="(min-width: 1440px)" srcset="img/middle2-desktop.png 1x, img/middle2-desktop@2x.png 2x">
+                    <img class="slider__photo slider__photo--skinny" src="img/middle2-tablet.png" srcset="img/middle2-tablet.png 1x, img/middle2-tablet@2x.png 2x" alt="Половина худого кота">
+                  </picture>
+                </li>
+                <li class="slider__item slider__item--after">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet.webp 1x, img/after-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/after-mobile.webp 1x, img/after-mobile@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="img/after-tablet.png 1x, img/after-tablet@2x.png 2x">
+                    <img class="slider__photo slider__photo--after" src="img/after-mobile.png" srcset="img/after-mobile.png 1x, img/after-mobile@2x.png 2x" alt="Худой кот">
+                  </picture>
+                </li>
+              </ul>
+              <div class="slider__controls">
+                <button class="slider__button" type="button">Было</button>
+                <div class="slider__scale">
+                  <div class="slider__toggle"></div>
+                </div>
+                <button class="slider__button" type="button">Стало</button>
+              </div>
             </div>
-            <div class="example__item-expenses">
-              <b class="example__parameter-expenses">Затраты на питание:</b>
-              <b class="example__value-expenses">15 000 РУБ.</b>
-            </div>
-          </div>
-        </div>
-        <div class="example__slider slider">
-          <ul class="slider__list">
-            <li class="slider__item slider__item--before">
-              <picture>
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet.webp 1x, img/before-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/before-mobile.webp 1x, img/before-mobile@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/before-tablet.png 1x, img/before-tablet@2x.png 2x">
-                <img class="slider__photo slider__photo--before" src="img/before-mobile.png" srcset="img/before-mobile.png 1x, img/before-mobile@2x.png 2x" alt="Упитанный кот">
-              </picture>
-            </li>
-            <li class="slider__item slider__item--middle">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)" srcset="img/middle1-desktop.webp 1x, img/middle1-desktop@2x.webp 2x">
-                <source type="image/webp" srcset="img/middle1-tablet.webp 1x, img/middle1-tablet@2x.webp 2x">
-                <source media="(min-width: 1440px)" srcset="img/middle1-desktop.png 1x, img/middle1-desktop@2x.png 2x">
-                <img class="slider__photo slider__photo--fat" src="img/middle1-tablet.png" srcset="img/middle1-tablet.png 1x, img/middle1-tablet@2x.png 2x" alt="Половина упитанного кота">
-              </picture>
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)" srcset="img/middle2-desktop.webp 1x, img/middle2-desktop@2x.webp 2x">
-                <source type="image/webp" srcset="img/middle2-tablet.webp 1x, img/middle2-tablet@2x.webp 2x">
-                <source media="(min-width: 1440px)" srcset="img/middle2-desktop.png 1x, img/middle2-desktop@2x.png 2x">
-                <img class="slider__photo slider__photo--skinny" src="img/middle2-tablet.png" srcset="img/middle2-tablet.png 1x, img/middle2-tablet@2x.png 2x" alt="Половина худого кота">
-              </picture>
-            </li>
-            <li class="slider__item slider__item--after">
-              <picture>
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet.webp 1x, img/after-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/after-mobile.webp 1x, img/after-mobile@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/after-tablet.png 1x, img/after-tablet@2x.png 2x">
-                <img class="slider__photo slider__photo--after" src="img/after-mobile.png" srcset="img/after-mobile.png 1x, img/after-mobile@2x.png 2x" alt="Худой кот">
-              </picture>
-            </li>
-          </ul>
-          <div class="slider__controls">
-            <button class="slider__button" type="button">Было</button>
-            <div class="slider__scale">
-              <div class="slider__toggle"></div>
-            </div>
-            <button class="slider__button" type="button">Стало</button>
           </div>
         </div>
         <div class="example__bg"></div>
       </section>
 
       <section class="information">
-        <h2 class="visually-hidden">Наше место расположения</h2>
-        <div class="information__contacts">
-          <div class="information__contacts-wrapper">
-            <div class="contacts">
-              <p class="contacts__cooperation">Приглашаем<br>к сотрудничеству дилеров!</p>
-              <p class="contacts__address">ул. Большая Конюшенная, д. 19/8<span>Санкт-Петербург</span></p>
+        <div class="container">
+          <h2 class="visually-hidden">Наше место расположения</h2>
+          <div class="information__contacts">
+            <div class="information__contacts-wrapper">
+              <div class="contacts">
+                <p class="contacts__cooperation">Приглашаем<br>к сотрудничеству дилеров!</p>
+                <p class="contacts__address">ул. Большая Конюшенная, д. 19/8<span>Санкт-Петербург</span></p>
+              </div>
             </div>
           </div>
         </div>
@@ -214,9 +220,9 @@
             </ul>
           </div>
           <div class="page-footer__copyright copyright">
-            <b class="copyright__text">HTML Academy</b>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип HTML Academy">
-              <svg width="27" height="34">
+              <b class="copyright__text">HTML Academy</b>
+              <svg class="copyright__icon" width="27" height="34">
                 <use xlink:href="img/sprite.svg#html-academy"></use>
               </svg>
             </a>

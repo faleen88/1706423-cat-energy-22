@@ -43,11 +43,10 @@
     </header>
 
     <main class="page-form">
-      <div class="container">
-        <form class="form-selection" method="GET" action="https://echo.htmlacademy.ru">
+      <form class="form-selection" method="GET" action="https://echo.htmlacademy.ru">
+        <div class="container">
           <h1 class="form-selection__title">Подбор программы</h1>
           <p class="form-selection__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
-
           <div class="form-selection__list">
             <fieldset class="form-selection__item fields fields--data-cat">
               <ul class="fields__list">
@@ -84,9 +83,13 @@
               </ul>
             </fieldset>
           </div>
+        </div>
 
-          <fieldset class="form-selection__item fields fields--data-man">
-            <h2 class="fields__title title-style">Контактные данные <br>(владельца кота)</h2>
+        <fieldset class="form-selection__item fields fields--data-man title-style">
+          <h2 class="fields__title">
+            <b class="fields__title-text">Контактные данные <br>(владельца кота)</b>
+          </h2>
+          <div class="container">
             <ul class="fields__list">
               <li class="fields__item field-text field-text--email">
                 <label class="field-text__label" for="post">E-mail:*</label>
@@ -103,18 +106,26 @@
                 </svg>
               </li>
             </ul>
-          </fieldset>
+          </div>
+        </fieldset>
 
-          <fieldset class="form-selection__item fields fields--comment">
-            <h2 class="fields__title title-style">Комментарий</h2>
-              <div class="fields__item field-text">
-                <label class="visually-hidden" for="comment">Напишите ваш комментарий</label>
-                <textarea class="field-text__comment" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <fieldset class="form-selection__item fields fields--comment title-style">
+          <h2 class="fields__title">
+            <b class="fields__title-text">Комментарий</b>
+          </h2>
+          <div class="container">
+            <div class="fields__item field-text">
+              <label class="visually-hidden" for="comment">Напишите ваш комментарий</label>
+              <textarea class="field-text__comment" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
-          </fieldset>
+          </div>
+        </fieldset>
 
-          <fieldset class="form-selection__item fields fields--additionall">
-            <h2 class="fields__title title-style">Дополнительно</h2>
+        <fieldset class="form-selection__item fields fields--additionall title-style">
+          <h2 class="fields__title">
+            <b class="fields__title-text">Дополнительно</b>
+          </h2>
+          <div class="container">
             <ul class="fields__list">
               <li class="fields__item field-checkbox">
                 <input class="visually-hidden field-checkbox__input" type="checkbox" name="sweetener" id="sweetener" checked>
@@ -133,22 +144,26 @@
                 <label class="field-checkbox__label" for="vitamins">Витамины</label>
               </li>
             </ul>
-          </fieldset>
+          </div>
+        </fieldset>
 
+        <div class="container">
           <div class="form-selection__dispatch">
             <button class="form-selection__button button" type="submit"><span class="button__text">Отправить заявку</span></button>
             <p class="form-selection__footnote">* — Обязательные поля</p>
           </div>
-        </form>
-      </div>
+        </div>
+      </form>
 
       <section class="information">
-        <h2 class="visually-hidden">Наше место расположения</h2>
-        <div class="information__contacts information__contacts--inner">
-          <div class="information__contacts-wrapper">
-            <div class="contacts">
-              <p class="contacts__cooperation">Приглашаем<br>к сотрудничеству дилеров!</p>
-              <p class="contacts__address">ул. Большая Конюшенная, д. 19/8<span>Санкт-Петербург</span></p>
+        <div class="container">
+          <h2 class="visually-hidden">Наше место расположения</h2>
+          <div class="information__contacts information__contacts--inner">
+            <div class="information__contacts-wrapper">
+              <div class="contacts">
+                <p class="contacts__cooperation">Приглашаем<br>к сотрудничеству дилеров!</p>
+                <p class="contacts__address">ул. Большая Конюшенная, д. 19/8<span>Санкт-Петербург</span></p>
+              </div>
             </div>
           </div>
         </div>
@@ -193,9 +208,9 @@
             </ul>
           </div>
           <div class="page-footer__copyright copyright">
-            <b class="copyright__text">HTML Academy</b>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип HTML Academy">
-              <svg width="27" height="34">
+              <b class="copyright__text">HTML Academy</b>
+              <svg class="copyright__icon" width="27" height="34">
                 <use xlink:href="img/sprite.svg#html-academy"></use>
               </svg>
             </a>

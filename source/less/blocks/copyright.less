@@ -1,9 +1,19 @@
 .copyright {
+  @media (min-width: @tablet-width) {
+    min-width: 163px;
+  }
+}
+
+.copyright__link {
   display: flex;
   justify-content: space-between;
 
-  @media (min-width: @tablet-width) {
-    min-width: 163px;
+  &:hover .copyright__icon {
+    fill: @green;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -12,16 +22,9 @@
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
+  color: @darkgrey;
 }
 
-.copyright__link {
+.copyright__icon {
   fill: #666666;
-
-  &:hover {
-    fill: @green;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }

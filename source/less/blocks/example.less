@@ -13,8 +13,14 @@
   @media (min-width: @desktop-width) {
     padding-top: 0;
     padding-bottom: 10px;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-columns: 680px 1fr;
+    grid-template-columns: 460px 1fr;
+    grid-column-gap: 110px;
   }
 }
 
@@ -174,6 +180,12 @@
 }
 
 .example__slider {
+  margin-left: -20px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+  }
+
   @media (min-width: @desktop-width) {
     padding-right: 70px;
   }
